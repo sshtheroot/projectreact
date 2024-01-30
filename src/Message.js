@@ -5,7 +5,7 @@ function Message() {
 
   function handleClick() {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://cloud-wor7.onrender.com/');
+    xhr.open('GET', 'https://cloud-wor7.onrender.com/product/1');
     xhr.onload = function() {
       if (xhr.status === 200) {
         setData(JSON.parse(xhr.responseText));
