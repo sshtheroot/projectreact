@@ -2,7 +2,7 @@
 
 function Login() {
 
- /*  const check = fetch("https://securityexpert.onrender.com/", {
+  const check = fetch("https://securityexpert.onrender.com/", {
     method: "POST",
     body: JSON.stringify({
       username: username,
@@ -10,7 +10,7 @@ function Login() {
     })
   })
     .then(response => response.json())
-    .catch(error => console.error(error)); */
+    .catch(error => console.error(error));  
 
   return (
 
