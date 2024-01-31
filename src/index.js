@@ -14,6 +14,6 @@ ReactDOM.render(
  
 );
 
- 
+ Cool
 
 reportWebVitals(sendToVercelAnalytics);
