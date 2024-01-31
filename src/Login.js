@@ -15,7 +15,7 @@ function Login() {
   return (
 
     
-    <form>
+    <form onSubmit={check}>
 
       <div class="form-outline mb-4">
         <input name= "username" id="form2Example1" class="form-control" />
