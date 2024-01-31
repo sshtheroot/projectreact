@@ -2,7 +2,7 @@
 
 function Login() {
 
-  const check =(username,password) => fetch("https://securityexpert.onrender.com/", {
+  const check =username=>password => fetch("https://securityexpert.onrender.com/", {
     method: "POST",
     body: JSON.stringify({
       username: username,
