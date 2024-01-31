@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Data from './Data';
 function App() {
   return (
     <div className="App">
@@ -15,7 +15,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-      
+          
+     <Data/>
         </a>
       </header>
     </div>
