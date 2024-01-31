@@ -2,8 +2,17 @@
 
 function Login() {
 
+  let res = fetch("https://securityexpert.onrender.com/",  {
+    method: "POST",
+    body: JSON.stringify({
+      username: username,
+      password: password, 
+    })})
+      .then(response => response.json()) 
+      .catch(error => console.error(error));
+
   return (
-    <form>
+    <form onSubmit={res}>
 
       <div class="form-outline mb-4">
         <input type="username" id="form2Example1" class="form-control" />
