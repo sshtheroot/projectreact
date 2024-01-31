@@ -13,7 +13,6 @@ ReactDOM.render(
   document.getElementById('root')
  
 );
-
- Cool
+ 
 
 reportWebVitals(sendToVercelAnalytics);

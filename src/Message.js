@@ -16,7 +16,7 @@ function Message() {
 
   return (
     <div>
-      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading  Data...'}
+      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading  Data... Please wait'}
     </div>
   );
 }
