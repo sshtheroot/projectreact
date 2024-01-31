@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Data from './Data';
+import Login from './Login';
 function App() {
   return (
     <div className="App">
@@ -16,7 +16,7 @@ function App() {
           rel="noopener noreferrer"
         >
           
-     <Data/>
+     <Login/>
         </a>
       </header>
     </div>
