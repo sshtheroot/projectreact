@@ -15,7 +15,7 @@ function Login() {
   return (
 
     
-    <form onSubmit={check}>
+    <form >
 
       <div class="form-outline mb-4">
         <input name= "username" id="form2Example1" class="form-control" />
@@ -27,7 +27,7 @@ function Login() {
         <label class="form-label" for="form2Example2">Password</label>
       </div>
 
-      <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+      <button onSubmit={check} type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
 
     </form>
 
