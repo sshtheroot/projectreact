@@ -14,7 +14,7 @@ export default function Profile() {
                 <div className="d-flex text-black">
                   <div className="flex-shrink-0">
                     <MDBCardImage
-                      style={{ width: '180px', borderRadius: '10px' }}
+                      style={{ width: '100px', borderRadius: '10px' }}
                       src='https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU'
                       alt='Generic placeholder image'
                       fluid />
