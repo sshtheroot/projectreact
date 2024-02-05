@@ -4,10 +4,11 @@ import './index.css';
 import Message from './Message'; 
 import reportWebVitals from './reportWebVitals';
 import { sendToVercelAnalytics } from './vitals';
+import Data from './Data';
 
   ReactDOM.render(
   <React.StrictMode>
-<Message />
+<Data />
   </React.StrictMode>, 
   document.getElementById('root')
  
