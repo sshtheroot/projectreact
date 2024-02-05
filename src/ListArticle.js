@@ -18,17 +18,23 @@ const names= async() => {
     setName(await response.json())
 }
 
- 
+return (
 
-   
-     const listArticle= name.map((data) => 
+    <div>
 
-                
+        <ol className="list group list-group-named">
+        {
+            name.map((data) => {
 
-                 <ul>{data.title}</ul>,
-                 <ul>{data.url}</ul>
+                return (
+                    <li className = "list-group=item" key ={data.title} > { data.url}</li>
                 )
-  return <ul>{listArticle}</ul>
+            })
+        }
+
+        </ol>
+    </div>
+)
 
 
 
