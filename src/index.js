@@ -9,11 +9,11 @@ import { sendToVercelAnalytics } from './vitals';
 ReactDOM.render(
   <React.StrictMode>
  <App />  
-  </React.StrictMode>, <Message />,
+  </React.StrictMode>, 
   document.getElementById('root')
  
 );
  
-
+ReactDOM.render(<Message />,document.getElementById('article'));
 
 reportWebVitals(sendToVercelAnalytics);

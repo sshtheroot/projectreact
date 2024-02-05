@@ -25,6 +25,7 @@ function Message() {
     {JSON.map(item => (  
       <li>  
         {item.title}  
+        {item.url}
       </li>  
      
     ))}  
