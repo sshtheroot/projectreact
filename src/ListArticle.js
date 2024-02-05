@@ -22,20 +22,20 @@ return (
 
     <div>
 
-        <ol className="list group list-group-named">
+       
         {
             name.map((data) => {
 
                 return (
-                   <ul>
+                    <ul className="list group list-group-named">
                     <li className = "list-group=item"> { data.title}</li>
                     <li className = "list-group=item"> { data.url}</li>
-                    </ul>
+                
+        </ul>
                 )
             })
         }
 
-        </ol>
     </div>
 )
 
