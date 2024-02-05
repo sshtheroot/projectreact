@@ -9,7 +9,7 @@ const [data, setData] =
 
 export default function List() {
     const listItems = data.map(data =>
-      <li>{data.title}</li>
+      <li>{data}</li>
     );
     return <ul>{listItems}</ul>;
   }
