@@ -8,7 +8,7 @@ function Message() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:8086/Tech')
+    fetch('https://crawler-micro.onrender.com/Tech')
       .then(response => response.json())
       .then(json => setData(json))
       .catch(error => console.error(error));
