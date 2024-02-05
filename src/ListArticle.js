@@ -28,17 +28,15 @@ function ListArticle() {
                 name.map((data) => {
 
                     return (
-                        <ul className="list group list-group-named">
-                            <li className="list-group=item"> {data.title}</li>
-                            <p> <a href={data.url}>{data.url}</a> </p>
-
+                       
+                            
 
                             <Stack gap={3}>
-                                <div className="p-2">F{data.title} <p> <a href={data.url}>{data.url}</a> </p></div>
+                                <div className="p-2">{data.title} <p> <a href={data.url}>{data.url}</a> </p></div>
                                 
                             </Stack>
 
-                        </ul>
+                    
 
 
 
