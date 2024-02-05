@@ -27,7 +27,10 @@ return (
             name.map((data) => {
 
                 return (
-                    <li className = "list-group=item" key ={data.title} > { data.url}</li>
+                    // <li className = "list-group=item" key ={data.title} > { data.url}</li>
+
+                 <ul>{data.title}</ul>,
+                 <ul>{data.url}</ul>
                 )
             })
         }
