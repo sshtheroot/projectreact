@@ -29,7 +29,12 @@ return (
                 return (
                     <ul className="list group list-group-named">
                     <li className = "list-group=item"> { data.title}</li>
-                    <p> <a href={data.url}>{data.url}</a> </p>
+                    
+
+                    <Stack gap={3}>
+      <div className="p-2">{ data.title}</div> 
+      <p> <a href={data.url}>{data.url}</a> </p>
+    </Stack>
                 
         </ul>
                 )
