@@ -5,21 +5,18 @@ import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardTitle, MDBCardText, MDBCa
 
 export default function Profile() {
   return (
-    
-              <MDBCardBody className="p-1">
-                <div className="d-flex text-black">
-                  <div className="flex-shrink-0">
-                    <MDBCardImage
-                      style={{ width: '100px', borderRadius: '10px' }}
-                      src='https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU'
-                      alt='Generic placeholder image'
-                      fluid />
-                  </div>
-                  <div className="flex-grow-1 ms-3">
-                    <MDBCardTitle>Bengaluru Dev</MDBCardTitle>
-                    <MDBCardText>Software Developer</MDBCardText> 
-                  </div>
-                </div>
-              </MDBCardBody> 
+ 
+
+<div class="card">
+  <img src="https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU" alt="John" style="width:100%"/>
+  <h1>Bengaluru Dev</h1>
+  <p class="title">Software Developer, Cloud technology enthusiast, </p>
+  <p>Internet</p>
+  <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <p><button>bengalurudev23@gmail.com</button></p>
+</div>
   );
 }
