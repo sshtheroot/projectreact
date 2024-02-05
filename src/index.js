@@ -5,10 +5,11 @@ import Message from './Message';
 import reportWebVitals from './reportWebVitals';
 import { sendToVercelAnalytics } from './vitals';
 import Data from './Data';
+import Rabbitmessage from './rabbitmessage';
 
   ReactDOM.render(
   <React.StrictMode>
-<Data />
+<Rabbitmessage />
   </React.StrictMode>, 
   document.getElementById('root')
  
