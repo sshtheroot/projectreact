@@ -1,43 +1,53 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
-function ListArticle(){
-
-
-const[name,setName] = useState([]);
+function ListArticle() {
 
 
-useEffect(()=> {
-    names()
-}, [])
+    const [name, setName] = useState([]);
 
 
-const names= async() => {
+    useEffect(() => {
+        names()
+    }, [])
 
-    const response= await fetch('https://crawler-micro.onrender.com/Amazon');
 
-    setName(await response.json())
-}
+    const names = async () => {
 
-return (
+        const response = await fetch('https://crawler-micro.onrender.com/Amazon');
 
-    <div>
+        setName(await response.json())
+    }
 
-       
-        {
-            name.map((data) => {
+    return (
 
-                return (
-                    <ul className="list group list-group-named">
-                    <li className = "list-group=item"> { data.title}</li>
-                    <p> <a href={data.url}>{data.url}</a> </p>
-                
-        </ul>
-                )
-            })
-        }
+        <div>
 
-    </div>
-)
+
+            {
+                name.map((data) => {
+
+                    return (
+                        <ul className="list group list-group-named">
+                            <li className="list-group=item"> {data.title}</li>
+                            <p> <a href={data.url}>{data.url}</a> </p>
+
+
+                            <Stack gap={3}>
+                                <div className="p-2">First item</div>
+                                <div className="p-2">Second item</div>
+                                <div className="p-2">Third item</div>
+                            </Stack>
+
+                        </ul>
+
+
+
+                    )
+                })
+            }
+
+        </div>
+    )
 
 
 
