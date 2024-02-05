@@ -1,12 +1,15 @@
 
 
-class MyComponent extends React.Component {
+import React from 'react'; 
+
+
+class ListArticle extends React.Component {
     constructor() {
       super()
       this.state = { movies: [] }
     }
   
-    ListArticle() {
+    cool() {
       var myRequest = new Request('https://crawler-micro.onrender.com/Amazon');
       let movies = [];
   
