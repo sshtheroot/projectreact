@@ -4,7 +4,7 @@ function Data() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('https://cloud-wor7.onrender.com/products')
+    fetch('https://cloud-wor7.onrender.com')
       .then(response => response.json())
       .then(json => setData(json))
       .catch(error => console.error(error));
