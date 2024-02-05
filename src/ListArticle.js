@@ -1,45 +1,43 @@
-import { useState, useEffect } from 'react';
+import {useState, useEffect} from 'react';
 
-function ListArticle() {
-
-
-    const [name, setName] = useState([]);
+function ListArticle(){
 
 
-    useEffect(() => {
-        names()
-    }, [])
+const[name,setName] = useState([]);
 
 
-    const names = async () => {
-
-        const response = await fetch('https://crawler-micro.onrender.com/Amazon');
-
-        setName(await response.json())
-    }
-
-    return (
-
-        <div>
+useEffect(()=> {
+    names()
+}, [])
 
 
-            {
-                name.map((data) => {
+const names= async() => {
 
-                    return (
-                        <ul className="list group list-group-named">
-                            <li className="list-group=item"> {data.title}</li>
-                            <p> <a href={data.url}>{data.url}</a> </p>
+    const response= await fetch('https://crawler-micro.onrender.com/Amazon');
 
+    setName(await response.json())
+}
 
+return (
 
-                        </ul>
-                    )
-                })
-            }
+    <div>
 
-        </div>
-    )
+       
+        {
+            name.map((data) => {
+
+                return (
+                    <ul className="list group list-group-named">
+                    <li className = "list-group=item"> { data.title}</li>
+                    <p> <a href={data.url}>{data.url}</a> </p>
+                
+        </ul>
+                )
+            })
+        }
+
+    </div>
+)
 
 
 
