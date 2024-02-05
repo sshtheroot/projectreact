@@ -10,7 +10,7 @@ export default function Profile() {
         <MDBRow className="justify-content-right">
           <MDBCol md="6" lg="1" xl="2" className="mt-1">
             <MDBCard style={{ borderRadius: '15px' }}>
-              <MDBCardBody className="p-4">
+              <MDBCardBody className="p-1">
                 <div className="d-flex text-black">
                   <div className="flex-shrink-0">
                     <MDBCardImage
