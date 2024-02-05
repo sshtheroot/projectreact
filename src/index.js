@@ -5,14 +5,14 @@ import reportWebVitals from './reportWebVitals';
 import { sendToVercelAnalytics } from './vitals';
 import ListArticle from './ListArticle';
 import Profile from './Profile';
-import { Nav } from './Nav';
+import { NavBar } from './NavBar';
  
 
 
 
   ReactDOM.render(
   <React.StrictMode> 
-    <Nav />
+    <NavBar />
     <Profile />
 <ListArticle /> 
   </React.StrictMode>, 
