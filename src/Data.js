@@ -4,7 +4,7 @@ function Data() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('https://crawler-micro.onrender.com/Cloud')
+    fetch('https://crawler-micro.onrender.com/amazon')
       .then(response => response.json())
       .then(json => setData(json))
       .catch(error => console.error(error));
