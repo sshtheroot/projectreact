@@ -26,7 +26,7 @@ class ListArticle extends React.Component {
           <h1>Movie List</h1>
           <ul>
             {this.state.movies.map(movie => {
-              return <li key={`movie-${movie.id}`}>{movie.name}</li>
+              return <li key={`movie-${movie.title}`}>{movie.url}</li>
             })}
           </ul>
         </div>
