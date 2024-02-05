@@ -9,7 +9,7 @@ import { sendToVercelAnalytics } from './vitals';
 ReactDOM.render(
   <React.StrictMode>
  <App />  
-  </React.StrictMode>,
+  </React.StrictMode>, <Message />,
   document.getElementById('root')
  
 );
