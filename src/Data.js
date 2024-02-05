@@ -4,16 +4,16 @@ function Data() {
   const [data, setData] = useState(null); 
 
   useEffect(() => {
-    fetch('https://crawler-micro.onrender.com/${id}')
+    fetch('https://crawler-micro.onrender.com/Amazon')
       .then(response => response.json())
       .then(json => setData(json))
       .catch(error => console.error(error));
-  }, [id]);
+  }, []);
 
   return (
     <div>
      
-      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'More Data'}
+      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading'}
     </div>
   );
 }
