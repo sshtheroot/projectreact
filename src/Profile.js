@@ -5,10 +5,10 @@ import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardTitle, MDBCardText, MDBCa
 
 export default function Profile() {
   return (
-    <div className="vh-100" style={{ backgroundColor: '#9de2ff' }}>
+    <div className="vh-100" style={{ backgroundColor: '##123da9' }}>
       <MDBContainer>
-        <MDBRow className="justify-content-center">
-          <MDBCol md="9" lg="7" xl="5" className="mt-5">
+        <MDBRow className="justify-content-left">
+          <MDBCol md="4" lg="7" xl="5" className="mt-5">
             <MDBCard style={{ borderRadius: '15px' }}>
               <MDBCardBody className="p-4">
                 <div className="d-flex text-black">

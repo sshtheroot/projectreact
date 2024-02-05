@@ -10,7 +10,8 @@ import Profile from './Profile';
 
   ReactDOM.render(
   <React.StrictMode>
-<ListArticle /> <Profile/>
+    <Profile/>
+<ListArticle /> 
   </React.StrictMode>, 
   document.getElementById('root')
  
