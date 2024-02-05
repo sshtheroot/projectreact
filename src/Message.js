@@ -8,16 +8,28 @@ function Message() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('https://cloud-wor7.onrender.com/products#')
+    fetch('http://localhost:8086/Tech')
       .then(response => response.json())
       .then(json => setData(json))
       .catch(error => console.error(error));
   }, []);
 
   return (
-    <div>
+   /*  <div>
       {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading  Data... Please wait'}
-    </div>
+    </div> */
+
+    <div className="container">     
+    <h1> Kist of articles </h1>  
+ 
+    {JSON.map(title, url => (  
+      <li>  
+        {title}  
+      </li>  
+     
+    ))}  
+ 
+</div>  
   );
 }
 

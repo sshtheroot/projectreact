@@ -10,8 +10,7 @@ function App() {
           Welcome to Project Expert
         </p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="App-link" 
           target="_blank"
           rel="noopener noreferrer"
         >
