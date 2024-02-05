@@ -6,7 +6,7 @@ function Profile() {
   return (
     <Card style={{ width: '18rem' }}>
      
-      <Card.Img variant="top" src="https://fastly.picsum.photos/id/8/200/200.jpg?hmac=OeG5ufhPYQBd6Rx1TAldAuF92lhCzAhKQKttGfawWuA"/> 
+      <Card.Img variant="top" src="https://fastly.picsum.photos/id/2/5000/3333.jpg?hmac=_KDkqQVttXw_nM-RyJfLImIbafFrqLsuGO5YuHqD-qQ"/> 
       <Card.Body>
         <Card.Title>Bengaluru Developer</Card.Title>
         <Card.Text>
