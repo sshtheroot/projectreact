@@ -5,7 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import { sendToVercelAnalytics } from './vitals';
 import ListArticle from './ListArticle';
 import Profile from './Profile';
-import { NavBar } from './NavBar';
+import NavBar from './NavBar';
+ 
  
 
 
