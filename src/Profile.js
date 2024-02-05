@@ -18,8 +18,8 @@ export default function Profile() {
                       fluid />
                   </div>
                   <div className="flex-grow-1 ms-3">
-                    <MDBCardTitle>Danny McLoan</MDBCardTitle>
-                    <MDBCardText>Senior Journalist</MDBCardText>
+                    <MDBCardTitle>Bengaluru Dev</MDBCardTitle>
+                    <MDBCardText>Software Developer</MDBCardText>
 
                     <div className="d-flex justify-content-start rounded-3 p-2 mb-2"
                       style={{ backgroundColor: '#efefef' }}>
