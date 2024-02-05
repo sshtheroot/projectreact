@@ -34,9 +34,8 @@ function ListArticle() {
 
 
                             <Stack gap={3}>
-                                <div className="p-2">First item</div>
-                                <div className="p-2">Second item</div>
-                                <div className="p-2">Third item</div>
+                                <div className="p-2">F{data.title} <p> <a href={data.url}>{data.url}</a> </p></div>
+                                
                             </Stack>
 
                         </ul>
