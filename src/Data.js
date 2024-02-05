@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function Data() {
   const [data, setData] = useState(null);
+  const { id } = useParams();
 
   useEffect(() => {
     fetch('https://crawler-micro.onrender.com/${id}')
