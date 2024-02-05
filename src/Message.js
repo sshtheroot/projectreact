@@ -22,9 +22,9 @@ function Message() {
     <div className="container">     
     <h1> Kist of articles </h1>  
  
-    {JSON.map(title => (  
+    {JSON.map(item => (  
       <li>  
-        {title.title}  
+        {item.title}  
       </li>  
      
     ))}  
