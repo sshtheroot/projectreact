@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css'; 
 import reportWebVitals from './reportWebVitals';
 import { sendToVercelAnalytics } from './vitals';
-import Data from './Data';
+import ListArticle from './ListArticle';
 
   ReactDOM.render(
   <React.StrictMode>
-<Data />
+<ListArticle />
   </React.StrictMode>, 
   document.getElementById('root')
  
