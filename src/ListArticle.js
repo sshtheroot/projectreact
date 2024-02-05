@@ -35,11 +35,12 @@ function ListArticle() {
 
 
                         </ul> */
-
+<ul className="list group list-group-named">
                         <Stack gap={3}>
                         <div className="p-2">{data.title}</div>
                         <div className="p-2">{data.url}</div> 
                       </Stack>
+                      </ul>
                     )
                 })
             }
