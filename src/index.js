@@ -9,7 +9,7 @@ import Rabbitmessage from './rabbitmessage';
 
   ReactDOM.render(
   <React.StrictMode>
-<Rabbitmessage />
+<Data />
   </React.StrictMode>, 
   document.getElementById('root')
  
