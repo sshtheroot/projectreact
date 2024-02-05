@@ -1,49 +1,50 @@
-import {useState, useEffect} from 'react';
-import { Stack } from 'react-bootstrap';
+import { useState, useEffect } from 'react';
 
-function ListArticle(){
-
-
-const[name,setName] = useState([]);
+function ListArticle() {
 
 
-useEffect(()=> {
-    names()
-}, [])
+    const [name, setName] = useState([]);
 
 
-const names= async() => {
+    useEffect(() => {
+        names()
+    }, [])
 
-    const response= await fetch('https://crawler-micro.onrender.com/Amazon');
 
-    setName(await response.json())
-}
+    const names = async () => {
 
-return (
+        const response = await fetch('https://crawler-micro.onrender.com/Amazon');
 
-    <div>
+        setName(await response.json())
+    }
 
-       
-        {
-            name.map((data) => {
+    return (
 
-                return (
-                    <ul className="list group list-group-named">
-                    <li className = "list-group=item"> { data.title}</li>
-                    
+        <div>
 
-                    <Stack gap={3}>
-      <div className="p-2">{ data.title}</div> 
-      <p> <a href={data.url}>{data.url}</a> </p>
-    </Stack>
-                
-        </ul>
-                )
-            })
-        }
 
-    </div>
-)
+            {
+                name.map((data) => {
+
+                    return (/* 
+                        <ul className="list group list-group-named">
+                            <li className="list-group=item"> {data.title}</li>
+                            <p> <a href={data.url}>{data.url}</a> </p>
+
+
+
+                        </ul> */
+
+                        <Stack gap={3}>
+                        <div className="p-2">{data.title}</div>
+                        <div className="p-2">{data.url}</div> 
+                      </Stack>
+                    )
+                })
+            }
+
+        </div>
+    )
 
 
 
