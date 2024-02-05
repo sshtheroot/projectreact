@@ -4,13 +4,12 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { sendToVercelAnalytics } from './vitals';
 import ListArticle from './ListArticle';
-import Profile from './Profile';
+ 
 
 
 
   ReactDOM.render(
-  <React.StrictMode>
-    <Profile/>
+  <React.StrictMode> 
 <ListArticle /> 
   </React.StrictMode>, 
   document.getElementById('root')
