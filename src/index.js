@@ -6,14 +6,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { sendToVercelAnalytics } from './vitals';
 
-/* ReactDOM.render(
+  ReactDOM.render(
   <React.StrictMode>
- <App />  
+<Message />
   </React.StrictMode>, 
   document.getElementById('root')
  
 );
-  */
-ReactDOM.render(<Message />,document.getElementById('article'));
+ 
+ 
 
 reportWebVitals(sendToVercelAnalytics);
