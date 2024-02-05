@@ -29,7 +29,7 @@ return (
                 return (
                     <ul className="list group list-group-named">
                     <li className = "list-group=item"> { data.title}</li>
-                    <li className = "list-group=item"> { data.url}</li>
+                    <li className = "list-group=item"> <a href={data.url}></a> </li>
                 
         </ul>
                 )
