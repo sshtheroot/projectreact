@@ -4,7 +4,7 @@ function Data() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('https://reqres.in/api/users?page=2')
+    fetch('https://cloud-wor7.onrender.com/products')
       .then(response => response.json())
       .then(json => setData(json))
       .catch(error => console.error(error));
