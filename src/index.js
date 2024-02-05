@@ -6,6 +6,8 @@ import { sendToVercelAnalytics } from './vitals';
 import ListArticle from './ListArticle';
 import Profile from './Profile';
 
+
+
   ReactDOM.render(
   <React.StrictMode>
 <ListArticle /> <Profile/>
