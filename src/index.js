@@ -7,6 +7,7 @@ import ListArticle from './ListArticle';
 import Profile from './Profile';
 import NavBar from './NavBar';
 import BasicInfo from './BasicInfo';
+import Test from '../Test';
  
  
 
@@ -15,6 +16,8 @@ import BasicInfo from './BasicInfo';
   ReactDOM.render(
   <React.StrictMode> 
     <NavBar />
+
+    <Test />
     <Profile /> <BasicInfo />
 <ListArticle /> 
   </React.StrictMode>, 
