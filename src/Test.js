@@ -11,12 +11,12 @@ class Link extends React.Component{
 
     render(){
 
-        return React.createElement('a', {href:'www.google.com'},'Read More Please')
+        return React.createElement('a', {href:'www.google.com'},'Read More Please ${this.prop.framework}')
     }
 }
     const name='rahul';
 
-    const link1= React.createElement(Link);
+    const link1= React.createElement(Link,{framework: 'sadads'});
     const link2=React.createElement(Link);
     const link3=React.createElement('a',null,'Hello');
     const group= React.createElement(React.Fragment,null,link1,link2,link3);
