@@ -14,10 +14,14 @@ function Data() {
     <div>
      
       {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading'} 
-      <label htmlFor="search"> Search: </label>
+   return(
+    <label htmlFor="search"> Search: </label>
       <input id="search" type="text" onChange={onSearch} />
+   );
     </div>
   );
+
+ 
 }
 
 export default Data;
