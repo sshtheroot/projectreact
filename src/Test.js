@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { render as renderJSX,ReactDom } from 'react-dom';
 
 function Test() {
 
@@ -11,8 +12,8 @@ function Test() {
     const group= React.createElement('div',null,title,link);
     const domElement=document.getElementById('root');
 
-    ReactDOM.render(group,domElement);
-
+   ReactDom.render(group,domElement);
+   
     return ( <div>
 
         <h1> Welcome to React Learning Component, {name} </h1> 
