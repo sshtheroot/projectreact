@@ -11,7 +11,7 @@ class Link extends React.Component{
 
     render(){
 
-        return React.createElement('a', {href:'www.google.com'},'Read More Please ${this.prop.framework}')
+        return React.createElement('a', {href:'www.google.com'},'Read More Please ${this.props.framework}')
     }
 }
     const name='rahul';
