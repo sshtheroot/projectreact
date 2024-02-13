@@ -16,8 +16,7 @@ import Test from './Test';
   ReactDOM.render(
   <React.StrictMode> 
     <NavBar />
-
-    <Test />
+ 
     <Profile /> <BasicInfo />
 <ListArticle /> 
   </React.StrictMode>, 
