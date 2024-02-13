@@ -1,11 +1,15 @@
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown'; 
 
+
 function NavBar() {
+
+  const dateTimeNow= new Date().toLocaleString();
   return (
     <> 
        
       <Nav className="justify-content-end" activeKey="/home">
+        <span>{dateTimeNow}</span>
         <Nav.Item>
           <Nav.Link href="/home">Cloud</Nav.Link>
         </Nav.Item>
@@ -24,6 +28,8 @@ function NavBar() {
     </>
   );
 }
+
+ 
 
  
 export default NavBar;
