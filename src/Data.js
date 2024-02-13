@@ -13,7 +13,9 @@ function Data() {
   return (
     <div>
      
-      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading'}
+      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading'} 
+      <label htmlFor="search"> Search: </label>
+      <input id="search" type="text" onChange={onSearch} />
     </div>
   );
 }
