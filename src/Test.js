@@ -12,7 +12,7 @@ function Test() {
 
     const title= React.createElement('h1',null,'Hello from ProjectReact');
     const link=React.createElement('a', {href:'www.google.com'},'Read More');
-    const group= React.createElement('div',null,title,link);
+    const group= React.createElement(React.Fragment,null,title,link);
     const domElement=document.getElementById('root');
 
    ReactDOM.render(group,domElement);
