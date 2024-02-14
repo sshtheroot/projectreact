@@ -8,8 +8,8 @@ function NavBar() {
   const isVerified=false;
 
   const items=['Cloud','Algorithm','Java'];
+  
   return (
-
     
     <> 
       <Nav className="justify-content-end" activeKey="/home">
@@ -29,9 +29,10 @@ function NavBar() {
             Disabled
           </Nav.Link>
         </Nav.Item>
-        <Nav.Item>
-          <Select items={items} />
-        </Nav.Item>
+      
+
+          <select items={items} />
+       
 
       </Nav>
     </>
