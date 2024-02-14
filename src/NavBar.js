@@ -6,11 +6,12 @@ function NavBar() {
 
   const dateTimeNow= new Date().toLocaleString();
   const isVerified=false;
+
+  const items=['Cloud','Algorithm','Java'];
   return (
 
     
     <> 
-       const items=['Cloud','Algorithm','Java'];
       <Nav className="justify-content-end" activeKey="/home">
         <span>{dateTimeNow}</span>
         <p>{isVerified && <a>Verified</a>}</p>
