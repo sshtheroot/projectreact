@@ -11,7 +11,7 @@ function NavBar() {
        
       <Nav className="justify-content-end" activeKey="/home">
         <span>{dateTimeNow}</span>
-        <p>{isVerified && <Checkmark/>}</p>
+        <p>{isVerified && <a>Verified</a>}</p>
         <Nav.Item>
           <Nav.Link href="/home">Cloud</Nav.Link>
         </Nav.Item>
