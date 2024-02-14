@@ -31,7 +31,11 @@ function NavBar() {
         </Nav.Item>
       
 
-          <select items={items} />
+          <select>
+
+            {this.props.items.map(item=> <option>{items}</option>)}
+
+          </select>
        
 
       </Nav>
