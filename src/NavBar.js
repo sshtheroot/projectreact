@@ -30,7 +30,7 @@ function NavBar() {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <select items={items} />
+          <Select items={items} />
         </Nav.Item>
 
       </Nav>
