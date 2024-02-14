@@ -31,13 +31,6 @@ function NavBar() {
         </Nav.Item>
       
 
-          <select>
-
-            {this.props.items.map(item=> <option>{items}</option>)}
-
-          </select>
-       
-
       </Nav>
     </>
   );
