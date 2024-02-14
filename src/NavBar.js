@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function NavBar() {
 
   const dateTimeNow= new Date().toLocaleString();
-  const isVerified=true;
+  const isVerified=false;
   return (
     <> 
        
