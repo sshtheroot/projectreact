@@ -7,8 +7,10 @@ function NavBar() {
   const dateTimeNow= new Date().toLocaleString();
   const isVerified=false;
   return (
+
+    
     <> 
-       
+       const items=['Cloud','Algorithm','Java'];
       <Nav className="justify-content-end" activeKey="/home">
         <span>{dateTimeNow}</span>
         <p>{isVerified && <a>Verified</a>}</p>
@@ -26,6 +28,10 @@ function NavBar() {
             Disabled
           </Nav.Link>
         </Nav.Item>
+        <Nav.Item>
+          <select items={items} />
+        </Nav.Item>
+
       </Nav>
     </>
   );
