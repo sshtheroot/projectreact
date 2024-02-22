@@ -15,7 +15,7 @@ function ListArticle() {
 
     const names = async () => {
 
-        const response = await fetch('https://crawler-micro.onrender.com/Amazon');
+        const response = await fetch('https://crawler-microservice-latest.onrender.com/Amazon');
 
         setName(await response.json())
     }
