@@ -12,7 +12,9 @@ import React, { useState, useEffect } from 'react';
      try {
        const response = await axios.get(`https://crawler-micro.onrender.com/page/${page}/size/10`, {
         headers: {
-          'Access-Control-Allow-Origin': '*',
+          "Access-Control-Allow-Headers": "*",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "*"      
         }});
        const { products, totalPages } = response.json();
        setProducts(products);
