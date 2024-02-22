@@ -1,37 +1,106 @@
-import React, { useState, useEffect } from 'react';
-
-function Data() {
-  const [data, setData] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(10);
-
-  useEffect(() => {
-    fetch(`https://crawler-micro.onrender.com/page/${currentPage}/size/${itemsPerPage}`)
-      .then(response => response.json())
-      .then(data => setData(data))
-      .catch(error => console.error(error));
-  }, [currentPage, itemsPerPage]);
-
-  const totalPages = Math.ceil(data.length / itemsPerPage);
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const currentItems = data.slice(startIndex, endIndex);
-
-  return (
-    <div>
-      // Render paginated data
-      <h1>List of Articles</h1>
-      {currentItems.map(item => (
-        <div key={item.id}>
-          <p>{item.title}</p>
-          <p>{item.url}</p>
-        </div>
-      ))}
-      // Render pagination controls
-    </div>
-  );
-}
-
-export default Data;
-
  
+ 
+ import React, { useState, useEffect } from 'react';
+ import axios from 'axios';
+ 
+ const Data = () => {
+   const [currentPage, setCurrentPage] = useState(1);
+   const [totalPages, setTotalPages] = useState(0);
+   const [products, setProducts] = useState([]);
+ 
+   const fetchProducts = async (page) => {
+     try {
+       const response = await axios.get(`https://crawler-micro.onrender.com/page/${page}/size/10`);
+       const { products, totalPages } = response.data;
+       setProducts(products);
+       setTotalPages(totalPages);
+     } catch (error) {
+       console.log(error);
+     }
+   };
+ 
+   useEffect(() => {
+     fetchProducts(currentPage);
+   }, [currentPage]);
+ 
+   const handlePrevPage = () => {
+     if (currentPage > 1) {
+       setCurrentPage(currentPage- 1);
+     }
+   };
+ 
+   const handleNextPage = () => {
+     if (currentPage < totalPages) {
+       setCurrentPage(currentPage + 1);
+     }
+   };
+ 
+   return (
+     <div>
+       {/* Display the products */}
+       {products.map((product) => (
+         <div key={product.id}>{product.title}</div>
+       ))}
+ 
+       {/* Pagination controls */}
+       <button onClick={handlePrevPage} disabled={currentPage === 1}>
+         Previous Page
+       </button>
+       <button onClick={handleNextPage} disabled={currentPage === totalPages}>
+         Next Page
+       </button>
+     </div>
+   );
+ };
+ 
+ export default Data;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+  
