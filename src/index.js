@@ -18,7 +18,7 @@ import Data from './Data';
     <NavBar />
  
     <Profile /> <BasicInfo />
-<ListArticle /> <Data />
+<ListArticle />  
   </React.StrictMode>, 
   document.getElementById('root')
  
