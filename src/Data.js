@@ -10,7 +10,7 @@ import React, { useState, useEffect } from 'react';
  
    const fetchProducts = async (page) => {
      try {
-       const response = await axios.get(`https://crawler-micro.onrender.com/page/${page}/size/10`, {
+       const response = await axios.get(`https://crawler-micro.onrender.com`, {
         headers: {
           "Access-Control-Allow-Headers": "*",
           "Access-Control-Allow-Origin": true,
