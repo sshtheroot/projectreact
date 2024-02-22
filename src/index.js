@@ -7,7 +7,7 @@ import ListArticle from './ListArticle';
 import Profile from './Profile';
 import NavBar from './NavBar';
 import BasicInfo from './BasicInfo';
-import Test from './Test';
+import Data from './Data';
  
  
 
