@@ -6,8 +6,8 @@ import { sendToVercelAnalytics } from './vitals';
 import ListArticle from './ListArticle';
 import Profile from './Profile';
 import NavBar from './NavBar';
-import BasicInfo from './BasicInfo';
-import Test from './Test';
+import BasicInfo from './BasicInfo'; 
+import Data from './Data';
  
  
 
@@ -18,7 +18,7 @@ import Test from './Test';
     <NavBar />
  
     <Profile /> <BasicInfo />
-<ListArticle /> 
+{/* <ListArticle />  */} <Data />
   </React.StrictMode>, 
   document.getElementById('root')
  
