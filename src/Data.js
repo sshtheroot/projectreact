@@ -8,7 +8,7 @@ function Data() {
 
 
   useEffect(() => {
-  //  fetch('https://crawler-micro.onrender.com/Amazon?page=${currentPage}&limit=${itemsPerPage}')
+  
     fetch('https://crawler-micro.onrender.com/page/${currentPage}/size/${itemsPerPage}')
       .then(response => response.json())
       .then(json => setData(json))
@@ -23,15 +23,8 @@ function Data() {
   const currentItems = data.slice(startIndex, endIndex);
 
   return (
-    <div>
-     
-{/*       {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading'} 
-   return(
-    <label htmlFor="search"> Search: </label>
-      <input id="search" type="text" onChange={onSearch} />
-   ); */}
-
-
+    <div> 
+<h1>List of the articles</h1>
 {currentItems.map(item => (
         <div key={item.id}>
           <p>{item.title}</p>
