@@ -16,7 +16,7 @@ import React, { useState, useEffect } from 'react';
           "Access-Control-Allow-Origin": "*",
           "Access-Control-Allow-Methods": "*"      
         }});
-       const { products, totalPages } = response.json();
+       const { products, totalPages } = response.data;
        setProducts(products);
        setTotalPages(totalPages);
      } catch (error) {
