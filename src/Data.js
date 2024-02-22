@@ -14,7 +14,9 @@ import React, { useState, useEffect } from 'react';
         headers: {
           "Access-Control-Allow-Headers": "*",
           "Access-Control-Allow-Origin": true,
-          "Access-Control-Allow-Methods": "*"      
+          "Access-Control-Allow-Methods": "*",
+          "Access-Control-Allow-Credentials":true
+
         }});
        const { products, totalPages } = response.data;
        setProducts(products);
