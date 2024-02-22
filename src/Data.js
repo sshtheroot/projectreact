@@ -15,7 +15,8 @@ import React, { useState, useEffect } from 'react';
           "Access-Control-Allow-Headers": "*",
           "Access-Control-Allow-Origin": true,
           "Access-Control-Allow-Methods": "*",
-          "Access-Control-Allow-Credentials":true
+          "Access-Control-Allow-Credentials":true,
+          'Content-Type': 'application/json',
 
         }});
        const { products, totalPages } = response.data;
