@@ -13,7 +13,7 @@ import React, { useState, useEffect } from 'react';
        const response = await axios.get(`https://crawler-micro.onrender.com/page/${page}/size/10`, {
         headers: {
           "Access-Control-Allow-Headers": "*",
-          "Access-Control-Allow-Origin": "https://crawler-micro.onrender.com",
+          "Access-Control-Allow-Origin": 'https://crawler-micro.onrender.com',
           "Access-Control-Allow-Methods": "*"      
         }});
        const { products, totalPages } = response.data;
