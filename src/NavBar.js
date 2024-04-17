@@ -12,7 +12,11 @@ function NavBar() {
   
   return (
     
+    
     <> 
+    <div className="hidden h-6 text-2xl font-semibold sm:block">
+                Bengaluru Dev
+              </div>
       <Nav className="justify-content-end" activeKey="/home">
         <span>{dateTimeNow}</span>
         <p>{isVerified && <a>Verified</a>}</p>
