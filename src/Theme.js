@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useTheme } from 'react'
 
 const Theme = () => {
   const [mounted, setMounted] = useState(false)
