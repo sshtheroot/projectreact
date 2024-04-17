@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { useTheme } from 'next-themes'
 
 const Theme = () => {
   const [mounted, setMounted] = useState(false)
