@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { useTheme } from '@material-ui/core/styles'
+import { useTheme } from '@material-ui/core@next'
 
 const Theme = () => {
   const [mounted, setMounted] = useState(false)
