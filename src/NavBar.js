@@ -14,6 +14,7 @@ function NavBar() {
     
     
     <> 
+    <header className="flex items-center justify-between py-10">
     <div className="hidden h-6 text-2xl font-semibold sm:block">
                 Bengaluru Dev
               </div>
@@ -37,6 +38,7 @@ function NavBar() {
       
 
       </Nav>
+      </header>
     </>
   );
 }
