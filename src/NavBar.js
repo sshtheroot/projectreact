@@ -26,7 +26,7 @@ function NavBar() {
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="disabled" disabled>
-            Disabled
+            <Theme />
           </Nav.Link>
         </Nav.Item>
       
