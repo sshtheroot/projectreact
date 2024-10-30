@@ -9,7 +9,7 @@ const Login = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://fb8d-49-207-193-14.ngrok-free.app/login', { username, password });
+            const response = await axios.post('https://2112-49-207-193-14.ngrok-free.app/login', { username, password });
           
             alert('Login successful');
         } catch (err) {
