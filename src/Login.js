@@ -1,37 +1,32 @@
+import React, { useState } from 'react';
+import axios from 'axios';
 
+const Login = () => {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
 
-function Login() {
+    const handleLogin = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await axios.post('https://rootinfo-microservice.onrender.com/login', { username, password });
+            localStorage.setItem('token', response.data.token);
+            alert('Login successful');
+        } catch (err) {
+            setError('Invalid credentials');
+        }
+    };
 
-  const check =username=>password => fetch("https://securityexpert.onrender.com/", {
-    method: "POST",
-    body: JSON.stringify({
-      username,
-      password
-    })
-  })
-    .then(response => response.json())
-    .catch(error => console.error(error));  
-
-  return (
-
-    
-    <form onSubmit={check}>
-
-      <div class="form-outline mb-4">
-        <input name= "username" id="form2Example1" class="form-control" />
-        <label class="form-label" for="form2Example1">Username</label>
-      </div>
-
-      <div class="form-outline mb-4">
-        <input name= "password" id="form2Example2" class="form-control" />
-        <label class="form-label" for="form2Example2">Password</label>
-      </div>
-
-      <button  type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
-
-    </form>
-
-  );
-}
+    return (
+        <div>
+            <form onSubmit={handleLogin}>
+                <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
+                <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                <button type="submit">Login</button>
+            </form>
+            {error && <p>{error}</p>}
+        </div>
+    );
+};
 
 export default Login;
