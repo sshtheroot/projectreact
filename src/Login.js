@@ -9,7 +9,7 @@ const Login = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://rootinfo-microservice.onrender.com/login', { username, password });
+            const response = await axios.post('https://entropy-microservice.onrender.com/login', { username, password });
             localStorage.setItem('token', response.data.token);
             alert('Login successful');
         } catch (err) {
