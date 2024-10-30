@@ -12,6 +12,7 @@ const Login = () => {
             const response = await axios.post('https://entropy-microservice.onrender.com/login', { username, password });
           
             alert('Login successful');
+            setUsername(response.data);
         } catch (err) {
             setError('Invalid credentials');
         }
@@ -25,6 +26,7 @@ const Login = () => {
                 <button type="submit">Login</button>
             </form>
             {error && <p>{error}</p>}
+            <h2>Welcome, {username}</h2>
         </div>
     );
 };
