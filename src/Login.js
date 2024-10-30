@@ -10,7 +10,7 @@ const Login = () => {
         e.preventDefault();
         try {
             const response = await axios.post('http://fb8d-49-207-193-14.ngrok-free.app/login', { username, password });
-            localStorage.setItem('token', response.data.token);
+          
             alert('Login successful');
         } catch (err) {
             setError('Invalid credentials');
