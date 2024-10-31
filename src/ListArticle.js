@@ -15,21 +15,18 @@ function ListArticle() {
 
     const names = async () => {
 
-        const response = await fetch('https://crawler-microservice-latest.onrender.com',{search});
+        const response = await fetch('https://crawler-microservice-latest.onrender.com/Amazon');
 
         setName(await response.json())
     }
+
  
 
     return (
 
         <div>
 
-<form onSubmit={names}>
-                <input type="text" placeholder="search" value={search} />
-                
-                <button type="submit">Search</button>
-            </form>
+
             {
                 name.map((data) => {
 
