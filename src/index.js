@@ -18,7 +18,7 @@ import ArticleSearch from './ArticleSearch'
     <NavBar />
  
     <Profile /> <BasicInfo />  <Login /> 
- <ListArticle />  <ArticleSearch />  
+   <ArticleSearch />  
   </React.StrictMode>, 
   document.getElementById('root')
  
