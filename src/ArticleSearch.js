@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 function ArticleSearch() {
-  const [keyword, setKeyword] = useState(""); // Stores the keyword entered by the user
-  const [articles, setArticles] = useState([]); // Stores articles retrieved from the API
+  const [keyword, setKeyword] = useState("");  
+  const [articles, setArticles] = useState([]);  
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -21,7 +21,7 @@ function ArticleSearch() {
         throw new Error(`Error: ${response.statusText}`);
       }
       const data = await response.json();
-      setArticles(data); // Assuming the API response is an array of articles
+      setArticles(data); 
     } catch (error) {
       setError(error.message);
     } finally {
@@ -31,9 +31,9 @@ function ArticleSearch() {
 
   return (
     <div>
-      <h1>Article Search</h1>
+      <h1>Find Artile</h1>
       
-      {/* Search input and button */}
+   
       <input
         type="text"
         value={keyword}
@@ -42,7 +42,7 @@ function ArticleSearch() {
       />
       <button onClick={handleSearch}>Search</button>
 
-      {/* Display loading, error, or articles */}
+ 
       {loading && <p>Loading...</p>}
       {error && <p style={{ color: "red" }}>{error}</p>}
 
