@@ -26,7 +26,7 @@ const Login = () => {
                 <button type="submit">Login</button>
             </form>
             {error && <p>{error}</p>}
-            <h2>Welcome, {username}</h2>
+            
         </div>
     );
 };
